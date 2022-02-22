@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/mainParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp">
+
+
+            <TextView
+                android:id="@+id/magnitudeValue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                tools:text= "5.5"
+                android:textSize="72sp"
+                android:textColor="@color/DarkBlue">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:layout_marginStart="32sp"
+                android:layout_toEndOf="@+id/magnitudeValue_text"
+                android:layout_alignBaseline="@+id/magnitudeValue_text"
+                android:text="@string/richterText"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/locationicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                android:padding="16dp"
+                >
+
+            </ImageView>
+
+
+
+            <TextView
+                android:id="@+id/LongitudeText"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/locationicon"
+                android:text="@string/longitudeText">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/longMag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text = "20.3084"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/LongitudeText"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/LatitudeText"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/locationicon"
+                android:layout_toEndOf="@+id/locationicon"
+                android:text="@string/latitudeText">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/latMag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text = "20.3084"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/LongitudeText"
+                android:layout_alignBottom="@+id/LatitudeText"
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/warningicon"
+                android:src="@drawable/ic_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                >
+
+            </ImageView>
+
+
+
+            <TextView
+                android:id="@+id/place_text"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:layout_alignBottom="@+id/warningicon"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/warningicon"
+                tools:text="80 Km E NY">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/calendaricon"
+                android:src="@drawable/ic_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                >
+
+            </ImageView>
+
+
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:layout_alignBottom="@+id/calendaricon"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/calendaricon"
+                tools:text="28/ago/2020 19:18:28">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</layout>

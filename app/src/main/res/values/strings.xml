@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Earthquake_app</string>
+    <string name="empty_view">No Earthquakes right now</string>
+    <string name="richterText">Richter</string>
+    <string name="longitudeText">Longitude:</string>
+    <string name="latitudeText">Latitude:</string>
+</resources>
